@@ -1,6 +1,6 @@
 This QR2-code program is intended to calculation resonant Raman spectrum, including the single-resonant, double-resonant, as well as defect-induced double-resonant Raman, based on the DFT calculation. In current release, you need the 7.3.1 version of the Quantum ESPRESSO (QE) package and the EPW module therein for preliminary calculations to obtain the electron-photon and electron-phonon coupling matrices. The QR2-code can integrate the previous imformation and generate the Raman spectrascopy at any given Laser energy with any incident- and scattered light polarization configuration. In double resonant Raman case, the QR2-code can further analyze the contribution of each possible pair of phonons to the Raman peak intensity of interest and therefore give the assignments of double resonant Raman quantitatively which is a vital task in double resonant Raman studying.
 
-For further introduction and detailed description of the calculating steps, please refer the official web site(https://qr2-code.com). If you encounter any issues while using it, please feel free to contact us and we will get back to you as soon as possible!
+For further introduction and detailed description of the calculating steps, please refer the official web site(qr2-code.com). If you encounter any issues while using it, please feel free to contact us and we will get back to you as soon as possible!
 
 Jianqi Huang
 
