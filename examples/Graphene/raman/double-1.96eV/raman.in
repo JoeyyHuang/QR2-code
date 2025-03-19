@@ -1,0 +1,39 @@
+epw
+&inputepw
+  prefix = 'Gra'
+  outdir = '../../epw/tmp'
+  system_2d = 'dipole_sp'
+  asr_typ = 'simple', vme = 'dipole'
+
+  nbndsub = 5
+  ep_coupling = .true., elph = .true.
+  use_ws = .true., num_iter = 400
+
+  dis_froz_min = -25, dis_froz_max = -1
+
+  proj(1) = 'f=0.3333333333,0.6666666667,0.0000000000:sp2;pz'
+  proj(2) = 'f=0.6666666667,0.3333333333,0.0000000000:pz'
+
+  fsthick = 5, eps_acustic = 5
+  degaussw = 0.005, degaussq = 0.01
+
+  wdata(1) = 'dis_mix_ratio = 0.7'
+  wdata(2) = 'dis_num_iter = 400'
+  wdata(3) = 'conv_window = 3'
+  wdata(4) = 'trial_step = 1.0'
+  wdata(5) = 'guiding_centres=.true.'
+
+  epwwrite = .false., epwread = .true.
+  wannierize = .false., wannier_plot= .false.
+
+  nk1 = 30, nk2 = 30, nk3 = 1
+  nq1 = 15, nq2 = 15, nq3 = 1
+  nkf1 = 150, nkf2 = 150, nkf3 = 1
+  nqf1 = 150, nqf2 = 150, nqf3 = 1
+
+  Raman_type = 'double', lhoph = .true.
+  Elaser = 1.96, Egamma = 0.1
+  reson_lim = .true., reson_thr = 1
+  prtdipole = .true., prtRaman = .true.
+  polar = 'all'
+/
