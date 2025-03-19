@@ -1,0 +1,7 @@
+&PLOT
+  dir_raman = '../qraman-xx'
+  Raman_type = 'single', lhoph = .true.
+  lRay_sca = .false., Ray_thr = 5
+  Rs_min = -2000, Rs_max = 2000, Rs_inc = 0.1
+  Lgamma = 20
+/
