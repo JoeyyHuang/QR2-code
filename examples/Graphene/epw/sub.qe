@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH -J Gra
+#SBATCH -p intel8581C
+#SBATCH -N 1
+#SBATCH -n 120
+
+export OMP_NUM_THREADS=1
+module load  intel/oneapi2022
+
+mpirun -np $SLURM_NTASKS ~/software/qe-7.3.1/bin/pw.x -npool $SLURM_NTASKS < nscf.in > nscf.out
+
+mpirun -np $SLURM_NTASKS ~/software/qe-7.3.1/bin/epw.x -npool $SLURM_NTASKS < epw.in > epw.out
+
