@@ -1,0 +1,15 @@
+&PLOT
+  dir_raman = '../qraman-xx'
+  Raman_type = 'defect', lhoph = .true.
+  lRay_sca = .false., Ray_thr = 5
+  Rs_min = -2000, Rs_max = 2000, Rs_inc = 0.1
+  Lgamma = 20
+/
+&ANALYSIS
+  lRaman_modes = .true.
+  nphonon_modes = 6
+  nRaman_modes = 3
+  Raman_modes(1) = 1096.5
+  Raman_modes(2) = 1355.9
+  Raman_modes(3) = 1599.9
+/
