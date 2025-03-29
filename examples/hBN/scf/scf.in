@@ -1,0 +1,26 @@
+&CONTROL
+  calculation = 'scf'
+  prefix = 'BN'
+  verbosity = 'high', disk_io = 'low'
+  tstress = .true., tprnfor = .true.
+  outdir = './tmp', pseudo_dir = '../pseudo'
+/
+&SYSTEM
+  ibrav = 4
+  celldm(1) = 4.7450452641, celldm(3) = 7.9650499455
+  nat = 2, ntyp = 2
+  ecutwfc = 120, ecutrho = 480
+  occupations = 'fixed'
+  assume_isolated = '2D'
+/
+&ELECTRONS
+  conv_thr = 1.d-13
+/
+ATOMIC_SPECIES
+  B  10.811  B.upf
+  N  14.006  N.upf
+ATOMIC_POSITIONS {crystal}
+  B  0.3333333333  0.6666666667  0.0000000000
+  N  0.6666666667  0.3333333333  0.0000000000
+K_POINTS {automatic}
+  24  24  1  0  0  0

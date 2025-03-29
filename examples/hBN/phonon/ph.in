@@ -1,0 +1,10 @@
+phonons
+&inputph
+  prefix = 'BN'
+  outdir = './tmp'
+  nmix_ph = 20, tr2_ph = 1.0D-18
+  verbosity = 'high', reduce_io = .true.
+  fildyn = 'dyn', fildvscf = 'dvscf'
+  ldisp = .true.
+  nq1 = 12, nq2 = 12, nq3 = 1
+/

@@ -1,0 +1,33 @@
+epw
+&inputepw
+  prefix = 'BN'
+  outdir = './tmp', dvscf_dir = './save'
+  system_2d = 'dipole_sp', lpolar = .true.
+  asr_typ = 'simple', vme = 'dipole'
+
+  nbndsub = 6
+  ep_coupling = .true., elph = .true.
+  use_ws = .true., num_iter = 1000
+
+  dis_froz_min = -15, dis_froz_max = -0.2
+
+  proj(1) = 'B:sp;pz'
+  proj(2) = 'N:sp;pz'
+
+  fsthick = 5, eps_acustic = 5
+  degaussw = 0.005, degaussq = 0.01
+
+  wdata(1) = 'dis_mix_ratio = 0.7'
+  wdata(2) = 'dis_num_iter = 1000'
+  wdata(3) = 'conv_window = 3'
+  wdata(4) = 'trial_step = 1.0'
+  wdata(5) = 'guiding_centres=.true.'
+
+  epwwrite = .true., epwread = .false.
+  wannierize = .true., wannier_plot= .true.
+
+  nk1 = 24, nk2 = 24, nk3 = 1
+  nq1 = 12, nq2 = 12, nq3 = 1
+  nkf1 = 1, nkf2 = 1, nkf3 = 1
+  nqf1 = 1, nqf2 = 1, nqf3 = 1
+/
