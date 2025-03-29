@@ -9,5 +9,5 @@
   lRaman_modes = .false.
   nphonon_modes = 6
   nRaman_modes = 1
-  Raman_modes(1) = 100.3d0
+  Raman_modes(1) = 100.3
 /
