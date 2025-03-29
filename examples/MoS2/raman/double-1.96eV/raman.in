@@ -1,0 +1,40 @@
+epw
+&inputepw
+  prefix = 'MoS2'
+  outdir = '../../epw/tmp'
+  system_2d = 'dipole_sp', lpolar = .true.
+  asr_typ = 'simple', vme = 'dipole'
+
+  nbndsub = 22
+  ep_coupling = .true., elph = .true.
+  use_ws = .true., num_iter = 400
+
+  bands_skipped = 'exclude_bands = 1:12'
+  dis_froz_min = -8, dis_froz_max = -2
+
+  proj(1) = 'Mo:l=2'
+  proj(2) = 'S:l=1'
+
+  fsthick = 3, eps_acustic = 5
+  degaussw = 0.005, degaussq = 0.01
+
+  wdata(1) = 'dis_mix_ratio = 0.7'
+  wdata(2) = 'dis_num_iter = 400'
+  wdata(3) = 'conv_window = 3'
+  wdata(4) = 'trial_step = 1.0'
+  wdata(5) = 'guiding_centres=.true.'
+
+  epwwrite = .false., epwread = .true.
+  wannierize = .false., wannier_plot= .false.
+
+  nk1 = 18, nk2 = 18, nk3 = 1
+  nq1 = 9, nq2 = 9, nq3 = 1
+  nkf1 = 100, nkf2 = 100, nkf3 = 1
+  nqf1 = 100, nqf2 = 100, nqf3 = 1
+
+  Raman_type = 'double'
+  Elaser = 1.96, Egamma = 0.1
+  reson_lim = .true., reson_thr = 1
+  prtdipole = .true., prtRaman = .true.
+  polar = 'all'
+/
