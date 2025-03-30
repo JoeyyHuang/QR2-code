@@ -2,7 +2,8 @@
   flfrc = 'ifc'
   asr = 'simple'
   loto_2d = .true.
-  q_in_band_form = .true., q_in_cryst_coord = .true.
+  q_in_band_form = .true.
+  q_in_cryst_coord = .true.
 /
   4
   0.0000000000  0.0000000000  0.0000000000  45  ! G
