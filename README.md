@@ -1,7 +1,23 @@
-This QR2-code program is intended to calculation resonant Raman spectrum, including the single-resonant, double-resonant, as well as defect-induced double-resonant Raman, based on the DFT calculation. In current release, you need the 7.3.1 version of the Quantum ESPRESSO (QE) package and the EPW module therein for preliminary calculations to obtain the electron-photon and electron-phonon coupling matrices. The QR2-code can integrate the previous imformation and generate the Raman spectrascopy at any given Laser energy with any incident- and scattered light polarization configuration. In double resonant Raman case, the QR2-code can further analyze the contribution of each possible pair of phonons to the Raman peak intensity of interest and therefore give the assignments of double resonant Raman quantitatively which is a vital task in double resonant Raman studying.
+This is the distribution of the QR^2-code package (QR^2: Quantum-theory-based Resonant Raman).
+It is a driver to compute the Resonant Raman spectrum including single, double and defect-induced double resonant Raman, 
+using Quantum ESPRESSO (QE) package and EPW module therein as the underlying engine.
 
 NB: The current QR2-code is developed and tested based on QE of version 7.3.1. 
 We strongly recommend using it with QE-7.3.1 for compatibility.
+
+The QR^2 package consists of two folders, "examples" and "source code", in the current release v1.0.0
+(https://github.com/JoeyyHuang/QR2-code/archive/refs/tags/v1.0.0.tar.gz).
+
+## PACKAGES
+examples: 
+--Graphene: input files for single, double and defect resonant Raman calculations of semimetal material
+--MoS2: input files for single and double resonant Raman calculations of semiconductor material with spin-orbit coupling under consideration
+--hBN: input files for single and double resonant Raman calculations of insulator material
+source code:
+--EPW-src: the core codes for Raman spectrum calculating, modified based on the original files with the same names in QE/EPW/src
+--PHonon-PH: phonon-related code for sorting phonon branches in terms of symmetry, modified based on the original file with the same name in QE/PHonon/PH
+--Raman_PP: post-processing code for Raman spectrum plot and analysis
+--phonon_sort: script for generating the input files to perform the phonon-sorting calculation
 
 ## USAGE
 1. put the source code files in EPW-src inside QE/EPW/src directory and repalce the original files with the same names;
@@ -25,34 +41,11 @@ We strongly recommend using it with QE-7.3.1 for compatibility.
 Now you should have the executables (pw.x, ph.x, q2r.x, matdyn.x, phonon_sort.x, epw.x and raman_pp.x) in QE/bin directory required for resonant Raman calculations
 and you can run the examples.
 
-# Documentation
-For further introduction, installing, input variables description, and detailed calculating steps, please refer the official web site: [http://qr2-code.com](http://qr2-code.com/).
-
-If you encounter any issues while using it, please feel free to contact us using the GitHub discussions page: [https://github.com/JoeyyHuang/QR2-code/discussions](https://github.com/JoeyyHuang/QR2-code/discussions). We will get back to you as soon as possible!
+For more information about the relevant theory and variables explanation in the calculations, please see the web site [http://qr2-code.com](http://qr2-code.com/).
 
 # References and citing
 The theory behind the QERaman code is described in our pre-print:
 > J. Huang, R. Liu, Y. Zhang, N. T. Hung, H. Guo, R. Saito and T. Yang, [QR2-code: An open-source program for double resonance Raman spectra](https://arxiv.org/abs/2505.10041), *arXiv.2505.10041*
-
-# Contact
-
-Jianqi Huang
-
-Liaoning Academy of Materials, Shenyang 110167, China
-
-E-mail:&nbsp;&nbsp;jqhuang@lam.ln.cn
-
-Nguyen Tuan Hung
-
-Department of Physics, Tohoku University, Sendai 980-8578, Japan
-
-E-mail:&nbsp;&nbsp;nguyen.tuan.hung.e4@tohoku.ac.jp
-
-Teng Yang
-
-Institute of Metal Research, Chinese Academy of Sciences, Shenyang 110016, China
-
-E-mail:&nbsp;&nbsp;yanghaiteng@msn.com
 
 # License
 GNU General Public License (v3)
