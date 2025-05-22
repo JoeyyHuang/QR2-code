@@ -3,7 +3,7 @@ This QR2-code program is intended to calculation resonant Raman spectrum, includ
 # Documentation
 For further introduction, installing, input variables description, and detailed calculating steps, please refer the official web site: [http://qr2-code.com](http://qr2-code.com/).
 
-If you encounter any issues while using it, please feel free to contact us and we will get back to you as soon as possible!
+If you encounter any issues while using it, please feel free to contact us using the GitHub discussions page: [https://github.com/JoeyyHuang/QR2-code/discussions](https://github.com/JoeyyHuang/QR2-code/discussions). We will get back to you as soon as possible!
 
 # References and citing
 The theory behind the QERaman code is described in our pre-print:
