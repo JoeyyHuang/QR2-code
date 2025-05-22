@@ -1,0 +1,6 @@
+&input
+  fildyn   = '../phonon/dyn'
+  flfrc    = 'ifc'
+  zasr     = 'simple'
+  loto_2d  = .true.
+/

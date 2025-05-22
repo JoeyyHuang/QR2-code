@@ -1,0 +1,15 @@
+phonon
+&inputph
+  prefix    = 'Gra'
+  outdir    = '../tmp/'
+  nmix_ph   = 20
+  tr2_ph    = 1.0D-15
+  verbosity = 'high'
+  reduce_io = .true.
+  fildyn    = 'dyn'
+  fildvscf  = 'dvscf'
+  ldisp     = .true.
+  nq1       = 15
+  nq2       = 15 
+  nq3       = 1
+/
