@@ -9,7 +9,7 @@ If you encounter any issues while using it, please feel free to contact us and w
 The theory behind the QERaman code is described in our pre-print:
 > J. Huang, R. Liu, Y. Zhang, N. T. Hung, H. Guo, R. Saito and T. Yang, [QR2-code: An open-source program for double resonance Raman spectra](https://arxiv.org/abs/2505.10041), *arXiv.2505.10041*
 
-# Contributors
+# Contact
 
 Jianqi Huang
 
