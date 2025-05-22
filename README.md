@@ -50,7 +50,7 @@ and you can run the examples.
 For more information about the relevant theory and variables explanation in the calculations, please see the web site [http://qr2-code.com](http://qr2-code.com/).
 
 # References and citing
-The theory behind the QERaman code is described in our pre-print:
+The theory behind the QR^2-code is described in our pre-print:
 > J. Huang, R. Liu, Y. Zhang, N. T. Hung, H. Guo, R. Saito and T. Yang, [QR2-code: An open-source program for double resonance Raman spectra](https://arxiv.org/abs/2505.10041), *arXiv.2505.10041*
 
 # License
