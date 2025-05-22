@@ -1,3 +1,6 @@
+![flowchart](https://github.com/user-attachments/assets/146be93e-76b8-4d74-8ead-68e9b8ce015a)
+
+
 This is the distribution of the QR^2-code package (QR^2: Quantum-theory-based Resonant Raman).
 It is a driver to compute the Resonant Raman spectrum including single, double and defect-induced double resonant Raman, 
 using Quantum ESPRESSO (QE) package and EPW module therein as the underlying engine.
