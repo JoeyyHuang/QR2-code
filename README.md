@@ -9,6 +9,19 @@ The QR^2 package consists of two folders, "examples" and "source code", in the c
 (https://github.com/JoeyyHuang/QR2-code/archive/refs/tags/v1.0.0.tar.gz).
 
 ## PACKAGES
+```md
+QR2-code
+├── examples
+│   ├── Graphene: input files for single, double and defect resonant Raman calculations of semimetal material
+│   ├── MoS2: input files for single and double resonant Raman calculations of semiconductor material with spin-orbit coupling under consideration
+│   └── hBN: input files for single and double resonant Raman calculations of insulator material
+└── source code
+    ├── EPW-src: the core codes for Raman spectrum calculating, modified based on the original files with the same names in QE/EPW/src
+    ├── PHonon-PH: phonon-related code for sorting phonon branches in terms of symmetry, modified based on the original file with the same name in QE/PHonon/PH
+    ├── Raman_PP: post-processing code for Raman spectrum plot and analysis
+    └── phonon_sort: script for generating the input files to perform the phonon-sorting calculation
+```
+
 examples: 
 --Graphene: input files for single, double and defect resonant Raman calculations of semimetal material
 --MoS2: input files for single and double resonant Raman calculations of semiconductor material with spin-orbit coupling under consideration
