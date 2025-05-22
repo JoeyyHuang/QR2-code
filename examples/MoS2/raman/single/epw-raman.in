@@ -1,8 +1,8 @@
 epw
 &inputepw
   prefix        = 'MoS2'
-  outdir        = '../tmp/'
-  dvscf_dir     = './save/'
+  outdir        = '../../tmp/'
+  dvscf_dir     = '../../epw/save/'
   system_2d     = 'dipole_sp'
   lpolar        = .true.
   asr_typ       = 'simple'
@@ -32,14 +32,20 @@ epw
   wdata(4)      = 'trial_step = 1.0'
   wdata(5)      = 'guiding_centres=.true.'
 
-  epwwrite      = .true.
-  epwread       = .false.
-  wannierize    = .true.
-  wannier_plot  = .true.
+  epwwrite      = .false.
+  epwread       = .true.
+  wannierize    = .false.
+  wannier_plot  = .false.
 
   nk1 = 18, nk2 = 18, nk3 = 1
   nq1 = 9, nq2 = 9, nq3 = 1
   
-  nkf1 = 1, nkf2 = 1, nkf3 = 1
+  nkf1 = 100, nkf2 = 100, nkf3 = 1
   nqf1 = 1, nqf2 = 1, nqf3 = 1
+
+  Raman_type = 'single'
+  Elaser = 1.96, Egamma = 0.1
+  reson_lim = .true., reson_thr = 1
+  prtdipole = .true., prtRaman = .true.
+  polar = 'all'
 /

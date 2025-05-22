@@ -1,0 +1,16 @@
+&PLOT
+  dir_raman  = './qraman-xx'
+  Raman_type = 'double'
+  lRay_sca   = .false.
+  Ray_thr    = 5
+  Rs_min     = -4000 
+  Rs_max     = 4000
+  Rs_inc     = 0.1
+  Lgamma     = 10
+/
+&ANALYSIS
+  lRaman_modes   = .false.
+  nphonon_modes  = 6
+  nRaman_modes   = 1
+  Raman_modes(1) = 100.3
+/

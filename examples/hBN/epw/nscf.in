@@ -1,20 +1,27 @@
 &CONTROL
   calculation = 'nscf'
-  prefix = 'BN'
-  verbosity = 'high', disk_io = 'low'
-  tstress = .true., tprnfor = .true.
-  outdir = './tmp', pseudo_dir = '../pseudo'
+  prefix      = 'BN'
+  verbosity   = 'high'
+  disk_io     = 'low'
+  tstress     = .true.
+  tprnfor     = .true.
+  outdir      = '../tmp/'
+  pseudo_dir  = '../pseudo/'
 /
 &SYSTEM
-  ibrav = 4
-  celldm(1) = 4.7450452641, celldm(3) = 7.9650499455
-  nat = 2, ntyp = 2, nbnd = 16
-  ecutwfc = 120, ecutrho = 480
+  ibrav       = 4
+  celldm(1)   = 4.7450452641
+  celldm(3)   = 7.9650499455
+  nat         = 2
+  ntyp        = 2
+  nbnd        = 16
+  ecutwfc     = 120
+  ecutrho     = 480
   occupations = 'fixed'
   assume_isolated = '2D'
 /
 &ELECTRONS
-  conv_thr = 1.d-13
+  conv_thr       = 1.d-13
   diago_full_acc = .true.
   diago_thr_init = 1.d-13
 /

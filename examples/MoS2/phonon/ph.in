@@ -1,10 +1,15 @@
 phonons
 &inputph
-  prefix = 'MoS2'
-  outdir = './tmp'
-  nmix_ph = 20, tr2_ph = 1.0D-18
-  verbosity = 'high', reduce_io = .true.
-  fildyn = 'dyn', fildvscf = 'dvscf'
-  ldisp = .true.
-  nq1 = 9, nq2 = 9, nq3 = 1
+  prefix    = 'MoS2'
+  outdir    = '../tmp/'
+  nmix_ph   = 20
+  tr2_ph    = 1.0D-18
+  verbosity = 'high'
+  reduce_io = .true.
+  fildyn    = 'dyn'
+  fildvscf  = 'dvscf'
+  ldisp     = .true.
+  nq1       = 9
+  nq2       = 9
+  nq3       = 1
 /

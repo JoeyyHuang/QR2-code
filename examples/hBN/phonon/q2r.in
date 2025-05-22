@@ -1,6 +1,0 @@
-&input
-  fildyn = 'dyn'
-  flfrc = 'ifc'
-  zasr = 'simple'
-  loto_2d = .true.
-/

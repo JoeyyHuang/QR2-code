@@ -7,5 +7,5 @@
   flfrc = './ifc'
   asr = 'simple'
   loto_2d = .true.
-  matdyn_path = '/opt/qe-7.3.1-qr2/bin/matdyn.x'
+  matdyn_path = 'matdyn.x'
 /
