@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH -J MoS2
+#SBATCH -p intel8581C
+#SBATCH -N 1
+#SBATCH -n 120
+
+export OMP_NUM_THREADS=1
+module load  intel/oneapi2022
+
+mpirun -np $SLURM_NTASKS ~/software/qe-7.3.1/bin/epw.x -npool $SLURM_NTASKS < epw-raman.in > epw-raman.out
+
+mpirun -np $SLURM_NTASKS ~/software/qe-7.3.1/bin/raman_pp.x < raman_pp_1.in > raman_pp_1.out
+
+mpirun -np $SLURM_NTASKS ~/software/qe-7.3.1/bin/raman_pp.x < raman_pp_2.in > raman_pp_2.out
+

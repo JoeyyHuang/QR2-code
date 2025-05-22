@@ -1,5 +1,5 @@
 &PLOT
-  dir_raman = './qraman-lr'
+  dir_raman  = '../qraman-ll'
   Raman_type = 'single'
   lRay_sca   = .false.
   Ray_thr    = 5

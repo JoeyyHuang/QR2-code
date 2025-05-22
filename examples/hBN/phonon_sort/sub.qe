@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH -J MoS2
+#SBATCH -p intel8581C
+#SBATCH -N 1
+#SBATCH -n 120
+
+export OMP_NUM_THREADS=1
+module load  intel/oneapi2022
+
+mpirun -np $SLURM_NTASKS ~/software/qe-7.3.1/bin/q2r.x < q2r.in > q2r.out
+
+mpirun -np 1 ~/software/qe-7.3.1/bin/phonon_sort.x < phonon_sort.in
